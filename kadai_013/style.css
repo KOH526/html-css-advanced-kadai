@@ -36,9 +36,6 @@ PC用のスタイル
     padding-top: 15px;
   }
 
-  #nav-sp{
-    display:none;
-  }
 
   /* ナビゲーションのリンクの装飾設定 */
   #nav-pc>a {
