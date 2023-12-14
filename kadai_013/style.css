@@ -59,6 +59,15 @@ PC用のスタイル
   #nav-pc>a:active {
     color: #0d0d0d;
   }
+  #nav-sp{
+    display:none;
+  }
+
+  #menu-sp{
+    display:none;
+  }
+
+
 }
 
 /* ==================
@@ -70,13 +79,16 @@ SP向けレイアウト
     min-width:375px;
     margin:0;
   }
+  /* PC用ナビゲーション非表示 */
   #nav-pc{
     display:none;
   }
+  /* ハンバーガーメニュー画像 */
   #menu-sp{
     float:right;
     padding:0;
   }
+  /* スマートフォン用ナビゲーション設定 */
   #nav-sp{
     background-color: #ce933e;
     position:absolute;
@@ -85,6 +97,7 @@ SP向けレイアウト
     height:100%;
     width:100%;
     display:none;
+    /*ハンバーガーメニューで表示できるように初期設定は非表示 */
     z-index:100;
   }
   #close{
@@ -108,12 +121,10 @@ SP向けレイアウト
     text-decoration:underline;
   }
   #nav-sp>a:active{
-    color:#ffffff
+    color:#ffffff;
   }
   #nav-sp>.menu{
     text-decoration:none;
-    display:none;
-    display:block;
     margin:0 20px;
     height:44px;
     font-size:16px;
